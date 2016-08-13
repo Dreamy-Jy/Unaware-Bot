@@ -2,7 +2,7 @@ body {
     margin: 0px;
     text-align: center;
     font-family: "Oswald", serif;
-    background-color: lightgrey;
+    background-color: white;
 }
 
 h1 {
@@ -13,6 +13,7 @@ input {
     padding: 10px;
     border: 0px;
     font-family: "Oswald", serif;
+    background-color: lightgrey;
 }
 
 button {
@@ -22,4 +23,9 @@ button {
     color: white;
     font-family: "Oswald", serif;
     margin-left: -3px;
+}
+
+#img {
+    margin: 0px;
+    margin-bottom: 25px;
 }
