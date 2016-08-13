@@ -8,7 +8,7 @@ firebase.initializeApp(a);
 
 function submit() {
     var person = $('#email').val();
-    firebase.database().ref('email/' + person).push({
+    firebase.database().ref('email/' + person).update({
         phone: person
     })
 }
