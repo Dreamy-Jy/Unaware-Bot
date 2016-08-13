@@ -10,12 +10,10 @@ $(document).keypress(function(e) {
     if(e.which == 13) {
         submit();
     }
-}
+})
 
 function submit() {
     var person = $('#email').val();
-    firebase.database().ref('email/' + person).update({
-        phone: person
-    })
+    firebase.database().ref('email/' + person).update({phone: person});
     $('#email').val('');
 }
