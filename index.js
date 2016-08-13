@@ -16,6 +16,8 @@ $(document).keypress(function(e) {
 
 function submit() {
     var person = $('#email').val();
-    firebase.database().ref('email/' + person).update({phone: person});
-    $('#email').val('');
+    if (person.length > 0) {
+        firebase.database().ref('email/' + person).update({phone: person});
+        $('#email').val('');
+    }
 }
