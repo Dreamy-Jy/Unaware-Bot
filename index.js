@@ -6,8 +6,10 @@ storageBucket: "human-race.appspot.com",
 };
 firebase.initializeApp(a);
 
-if(e.which == 13) {
-    submit();
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        submit();
+    }
 }
 
 function submit() {
