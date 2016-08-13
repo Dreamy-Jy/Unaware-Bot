@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: "Oswald", serif;
+    background-color: lightgrey;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+input {
+    padding: 10px;
+    border: 0px;
+    font-family: "Oswald", serif;
+}
+
+button {
+    padding: 9px;
+    border: 0px;
+    background-color: grey;
+    color: white;
+    font-family: "Oswald", serif;
+    margin-left: -3px;
+}

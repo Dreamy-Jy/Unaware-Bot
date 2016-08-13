@@ -6,6 +6,10 @@ storageBucket: "human-race.appspot.com",
 };
 firebase.initializeApp(a);
 
+if(e.which == 13) {
+    submit();
+}
+
 function submit() {
     var person = $('#email').val();
     firebase.database().ref('email/' + person).update({
