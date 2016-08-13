@@ -11,4 +11,5 @@ function submit() {
     firebase.database().ref('email/' + person).update({
         phone: person
     })
+    $('#email').val('');
 }
