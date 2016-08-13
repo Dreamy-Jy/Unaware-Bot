@@ -6,11 +6,9 @@ storageBucket: "human-race.appspot.com",
 };
 firebase.initializeApp(a);
 
-var email = firebase.database().ref('email/');
-
 function submit() {
     var person = $('#email').val();
-    email.push({
+    firebase.database().ref('email/' + person).push({
         phone: person
     })
 }
